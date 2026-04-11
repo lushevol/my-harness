@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "hooks": {
+    "pre-tool-use": [
+      {
+        "name": "cost-check",
+        "script": "pre-tool-use/cost-check.js",
+        "description": "Prevent budget overruns",
+        "enabled": true
+      },
+      {
+        "name": "security-scan",
+        "script": "pre-tool-use/security-scan.js",
+        "description": "Block secrets in tool calls",
+        "enabled": true
+      }
+    ],
+    "post-tool-use": [
+      {
+        "name": "cost-track",
+        "script": "post-tool-use/cost-track.js",
+        "description": "Accumulate usage data",
+        "enabled": true
+      },
+      {
+        "name": "auto-format",
+        "script": "post-tool-use/auto-format.js",
+        "description": "Format code after edits",
+        "enabled": false
+      }
+    ],
+    "session-start": [
+      {
+        "name": "load-context",
+        "script": "session-start/load-context.js",
+        "description": "Load project state",
+        "enabled": true
+      }
+    ],
+    "session-end": [
+      {
+        "name": "save-state",
+        "script": "session-end/save-state.js",
+        "description": "Persist session data",
+        "enabled": true
+      }
+    ],
+    "pre-commit": [
+      {
+        "name": "run-tests",
+        "script": "pre-commit/run-tests.js",
+        "description": "Prevent broken commits",
+        "enabled": true
+      }
+    ]
+  }
+}
