@@ -1,0 +1,21 @@
+[submodule "refers/ECC"]
+	path = refers/ECC
+	url = https://github.com/affaan-m/ECC.git
+[submodule "refers/Trellis"]
+	path = refers/Trellis
+	url = https://github.com/mindfold-ai/Trellis.git
+[submodule "refers/gsd-core"]
+	path = refers/gsd-core
+	url = https://github.com/open-gsd/gsd-core.git
+[submodule "refers/gstack"]
+	path = refers/gstack
+	url = https://github.com/garrytan/gstack.git
+[submodule "refers/mattpocok-skills"]
+	path = refers/mattpocok-skills
+	url = git@github.com:mattpocock/skills.git
+[submodule "refers/oh-my-claudecode"]
+	path = refers/oh-my-claudecode
+	url = https://github.com/Yeachan-Heo/oh-my-claudecode.git
+[submodule "refers/superpowers"]
+	path = refers/superpowers
+	url = https://github.com/obra/superpowers.git

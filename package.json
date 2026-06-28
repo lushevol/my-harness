@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "setup": "node scripts/setup.js",
-    "install-hooks": "node scripts/install-hooks.js"
+    "install-hooks": "node scripts/install-hooks.js",
+    "submodules:status": "node scripts/submodules.js status",
+    "submodules:sync": "node scripts/submodules.js sync",
+    "submodules:update": "node scripts/submodules.js update",
+    "submodules:update-all": "node scripts/submodules.js update-all",
+    "submodules:foreach": "node scripts/submodules.js foreach",
+    "submodules:list": "node scripts/submodules.js list"
   },
   "keywords": [
     "claude-code",
